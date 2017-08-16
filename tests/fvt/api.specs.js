@@ -36,6 +36,8 @@
     	});
 
       it('without zip code', function(done) {
+          assert.fail("Environment variable APP_URL is not defined");
+            return done();
         if(!appUrl) {
             assert.fail("Environment variable APP_URL is not defined");
             return done();
